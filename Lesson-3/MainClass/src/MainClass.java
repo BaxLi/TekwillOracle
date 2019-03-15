@@ -11,13 +11,11 @@ public class MainClass {
   
   public static void main(String[] args) {
     // TODO code application logic here
-    System.out.println("Hello");
-    
-    for (String as: args) {
-          System.out.println(as);
-    }
-   
-    System.out.println(args[1]);
-  
+      if (args!=null){
+        for (String as: args) {
+              System.out.println(as);
+        }
+      }
+    System.out.println("Thats all");   
   }
 }
