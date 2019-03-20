@@ -16,6 +16,8 @@ public class MainClass {
               System.out.println(as);
         }
       }
-    System.out.println("Thats all");   
+    System.out.println("Home work - Task 4-6");  
+    new hwTask4_6();
+    
   }
 }
