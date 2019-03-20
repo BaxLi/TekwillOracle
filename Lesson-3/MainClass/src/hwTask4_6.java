@@ -13,9 +13,9 @@ import java.util.Scanner;
  */
 public class hwTask4_6 {
   public hwTask4_6(){
-    System.out.println("Please enter the F degree:");
-    Scanner fValue=new Scanner(System.in);
-    System.out.println("The Celsius degree is "+(((fValue.nextInt())-32)*5/9));
+    System.out.println("Please enter the Fahrenheit degrees:");
+//    Scanner fValue=new Scanner(System.in);
+    System.out.println("The Celsius degree is "+(((new Scanner(System.in).nextInt())-32)*5/9)+" \b FINISH");
     
   }
 }
