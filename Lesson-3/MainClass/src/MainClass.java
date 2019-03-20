@@ -31,7 +31,7 @@ public class MainClass {
     
     //classwork
     System.out.println(parseBoolean("tRue"));
-    System.out.println(parseDouble("B444"));
+    System.out.println(parseDouble("444"));
     System.out.println(parseFloat("444.76d"));
     System.out.println(parseInt("444"));
     
