@@ -4,12 +4,9 @@ import static java.lang.Double.parseDouble;
 import static java.lang.Float.parseFloat;
 import static java.lang.Integer.parseInt;
 
-
-
-
 /**
  *
- * @author nsirbu
+ * @author BaxLi
  */
 public class MainClass {
 
@@ -35,10 +32,7 @@ public class MainClass {
     System.out.println(parseFloat("444.76d"));
     System.out.println(parseInt("444"));
     
-    Dog taxa=new Dog();
-    taxa.age=1;
-    Dog terier=new Dog();
-    terier.age=2;
+    new excersize4_14();
     
   }
 }

@@ -14,6 +14,6 @@ public class Dog {
   
   @Override
   public String toString(){
-    return "Dog {"+age+"}";
+    return "Dog age = {"+age+"} years";
   } 
 }
