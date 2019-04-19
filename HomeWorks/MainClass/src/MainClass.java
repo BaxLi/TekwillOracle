@@ -21,7 +21,7 @@ public class MainClass {
    */
   @SuppressWarnings("ResultOfObjectAllocationIgnored")
   public static void main(String[] args) {
-    new hwExcersize11_5("welllcommmmeee","is ais simpisle is");
+    new hwExcersize11_5("welllcommmmeee","is ais simpisle is", "hg1g2h3h4fg");
     
 //    int count=0;
 //    String as="Hell loftletter lo a lorem";
