@@ -1,5 +1,4 @@
 
-import com.sun.org.apache.xpath.internal.operations.Equals;
 import java.util.ArrayList;
 import java.util.ListIterator;
 import java.util.Random;
@@ -69,12 +68,12 @@ public class hwExcersize_12 {
     /** comparam */
     System.out.println("Comparing 2 arrays ");
         
-    for (Object z: employees.toArray()){
+    for (Employee z: employees){
       
       /** metoda equals a fost redefinita pentru clasa-obiectul Employee!!!
        */
       
-    if (employees2.contains((Employee) z)) {
+    if (employees2.contains(z)) {
         System.out.println("Dublicate founds (!) => "+z);
         }
       }
