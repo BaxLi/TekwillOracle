@@ -22,7 +22,8 @@ public class MainClass {
   @SuppressWarnings("ResultOfObjectAllocationIgnored")
   public static void main(String[] args) {
     //new hwExcersize11_5("welllcommmmeee","is ais simpisle is", "hg1g2h3h4fg");
-     new hwExcersize_12();
+//     new hwExcersize_12();
+     new hwExcersize_13();
 //    int count=0;
 //    String as="Hell loftletter lo a lorem";
 //            for(char z:as.toCharArray()){
