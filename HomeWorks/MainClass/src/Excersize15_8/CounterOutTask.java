@@ -9,7 +9,7 @@ package Excersize15_8;
  *
  * @author Bax
  */
-public class CounterOutTask extends AbstractTask implements Task {
+public class CounterOutTask extends AbstractTask{
 
   @Override
   public void execute() {

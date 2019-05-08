@@ -11,16 +11,15 @@ import java.util.Random;
  *
  * @author Bax
  */
-public class RandomOutTask extends AbstractTask implements Task{
-
+public class RandomOutTask extends AbstractTask {
+  private int r;
   public RandomOutTask() {
-    System.out.println("Randomout = "+(new Random().ints()));
+    r = new Random().nextInt(500);
   }
 
- 
   @Override
   public void execute() {
-    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    System.out.println("Randomout = " + r);
   }
-  
+
 }

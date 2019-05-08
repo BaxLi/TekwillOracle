@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
  *
  * @author Bax
  */
- abstract class AbstractTask {
+ abstract class AbstractTask implements Task {
   private String id;
   private LocalDateTime createdAt;
   private LocalDateTime executedAt;

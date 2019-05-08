@@ -9,16 +9,15 @@ package Excersize15_8;
  *
  * @author Bax
  */
-public class OutTask extends AbstractTask implements Task{
-
+public class OutTask extends AbstractTask{
+ private String str;
   public OutTask(String str) {
-    System.out.println("Outtask print ="+str);
+   this.str=str;
   }
-
   
   @Override
   public void execute() {
-    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    System.out.println("Outtask print ="+str);
   }
   
 }
