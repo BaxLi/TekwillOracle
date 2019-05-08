@@ -13,7 +13,6 @@ public class CounterOutTask extends AbstractTask implements Task {
 
   @Override
   public void execute() {
-    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    System.out.println("CounterOutTask=" + (hwExcersize15_8.counter++));
   }
-  
 }
