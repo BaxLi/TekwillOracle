@@ -5,14 +5,21 @@
  */
 package Excersize15_8;
 
+import java.time.LocalDateTime;
+
 /**
  *
  * @author Bax
  */
 public class CounterOutTask extends AbstractTask{
 
+  public CounterOutTask() {
+    this.createdAt=LocalDateTime.now();
+  }
+
   @Override
   public void execute() {
     System.out.println("CounterOutTask=" + (hwExcersize15_8.counter++));
+    this.executedAt=LocalDateTime.now();
   }
 }
