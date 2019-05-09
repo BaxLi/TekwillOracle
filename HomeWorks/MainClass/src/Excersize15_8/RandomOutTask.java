@@ -21,6 +21,7 @@ public class RandomOutTask extends AbstractTask {
     this.createdAt=LocalDateTime.now();
     r = new Random().nextInt(500);
     cloneNr=items++;
+    id++;
   }
 
   @Override

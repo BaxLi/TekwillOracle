@@ -21,6 +21,7 @@ public class OutTask extends AbstractTask{
    this.str=str;
    this.createdAt=LocalDateTime.now();
    cloneNr=items++;
+   id++;
   }
   
   @Override

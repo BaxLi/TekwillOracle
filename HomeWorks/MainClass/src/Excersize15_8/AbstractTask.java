@@ -12,11 +12,15 @@ import java.time.LocalDateTime;
  * @author Bax
  */
  abstract class AbstractTask implements Task {
-  protected String id;
+  public static int id;
   protected LocalDateTime createdAt=null;
   protected LocalDateTime executedAt=null;
   @Override
   public String toString(){
     return "should be overrited !!! comes from abstract ...";
   } 
+  @Override
+    public int getID(){
+      return id;
+  }
 }

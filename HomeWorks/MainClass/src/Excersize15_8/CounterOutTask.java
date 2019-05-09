@@ -15,6 +15,7 @@ public class CounterOutTask extends AbstractTask{
 
   public CounterOutTask() {
     this.createdAt=LocalDateTime.now();
+     id++;
   }
 
   @Override

@@ -21,7 +21,7 @@ public class hwExcersize15_8 {
     ls.add(cl);
   }
   public static void main(String[] str) {
-    AbstractTask cls;
+    AbstractTask cls=null;
     List<AbstractTask> ls = new LinkedList();
     Random rnd = new Random();
     for (int i = 0; i < 10; i++) {
@@ -51,6 +51,7 @@ public class hwExcersize15_8 {
         System.out.println(z.toString());
       }
     System.out.println("Finish to execute / Counter=" + counter);
+    System.out.println("Abstract id value=" + cls.getID());
 
   }
 }
