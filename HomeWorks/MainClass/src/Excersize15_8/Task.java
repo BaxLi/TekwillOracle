@@ -11,7 +11,8 @@ package Excersize15_8;
  */
 public interface Task {
   void execute();
-    public default int getID(){
-      return 0;
+          
+    public default String getID(){
+      return "NONE";
   }
 }

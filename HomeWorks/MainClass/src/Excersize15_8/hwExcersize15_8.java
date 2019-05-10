@@ -26,6 +26,7 @@ public class hwExcersize15_8 {
     Random rnd = new Random();
     for (int i = 0; i < 10; i++) {
       switch (rnd.nextInt(3) + 1) {
+// switch (2) {
         case 1:
           cls = new OutTask(rnd.nextDouble() + " passed");
           break;
@@ -51,7 +52,6 @@ public class hwExcersize15_8 {
         System.out.println(z.toString());
       }
     System.out.println("Finish to execute / Counter=" + counter);
-    System.out.println("Abstract id value=" + cls.getID());
 
   }
 }

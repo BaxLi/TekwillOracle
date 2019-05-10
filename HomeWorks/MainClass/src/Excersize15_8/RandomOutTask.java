@@ -14,24 +14,17 @@ import java.util.Random;
  * @author Bax
  */
 public class RandomOutTask extends AbstractTask {
-  private int r;
-  private static int items;
-  private int cloneNr;
+  private int randomNumber;
+
   public RandomOutTask() {
-    this.createdAt=LocalDateTime.now();
-    r = new Random().nextInt(500);
-    cloneNr=items++;
-    id++;
+    super();
+    randomNumber = new Random().nextInt(500);
   }
 
   @Override
   public void execute() {
-    System.out.println("Randomout = " + r);
-    this.executedAt=LocalDateTime.now();
-  }
-   @Override
-  public String toString() {
-    return "RandomoutTask{" +cloneNr + "} created = " +this.createdAt.format(DateTimeFormatter.ISO_DATE_TIME) + "} Executed ->"+this.executedAt.format(DateTimeFormatter.ISO_DATE_TIME);
+    super.execute();
+    System.out.println("Randomout executed = " + randomNumber);
   }
 
 }

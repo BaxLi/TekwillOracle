@@ -11,16 +11,14 @@ import java.time.LocalDateTime;
  *
  * @author Bax
  */
-public class CounterOutTask extends AbstractTask{
+public class CounterOutTask extends AbstractTask {
 
   public CounterOutTask() {
-    this.createdAt=LocalDateTime.now();
-     id++;
   }
 
   @Override
   public void execute() {
+    super.execute();
     System.out.println("CounterOutTask=" + (hwExcersize15_8.counter++));
-    this.executedAt=LocalDateTime.now();
   }
 }

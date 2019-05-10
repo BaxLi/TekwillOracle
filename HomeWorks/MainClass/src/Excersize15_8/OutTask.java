@@ -12,29 +12,17 @@ import java.time.format.DateTimeFormatter;
  *
  * @author Bax
  */
-public class OutTask extends AbstractTask{
- private String str;
- private static int items;
- private int cloneNr;
- 
+public class OutTask extends AbstractTask {
+
+  private String str;
+
   public OutTask(String str) {
-   this.str=str;
-   this.createdAt=LocalDateTime.now();
-   cloneNr=items++;
-   id++;
-  }
-  
-  @Override
-  public void execute() {
-    System.out.println("Outtask print ="+str);
-    this.executedAt=LocalDateTime.now();
+    this.str = str;
   }
 
   @Override
-  public String toString() {
-    return "OutTask{"+cloneNr + "} created = " +this.createdAt.format(DateTimeFormatter.ISO_DATE_TIME) + "}  Executed ->"+this.executedAt.format(DateTimeFormatter.ISO_DATE_TIME);
+  public void execute() {
+    super.execute();
+    System.out.println("Outtask print executed = " + str);
   }
-  
-  
-  
 }
