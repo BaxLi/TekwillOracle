@@ -5,46 +5,31 @@
  */
 package Excersize15_9;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 
 /**
  *
  * @author Bax
  */
-public class Stack <T extends Object> implements Container {
-  
-private LinkedList<Object> ls=null;
-private int size;
+public class Stack extends ContainerAbstractClass {
+
+  public Stack() {
+    super();
+  }
 
   @Override
   public Object pop() {
-    Object topElement=ls.getFirst();
-    ls.removeFirst();
-    size--;
-    return topElement ;
-  }
-
-  @Override
-  public void push(Object value) {
-    ls.add(value);
-    size++;
-  }
-
-  @Override
-  public boolean isEmpty() {
-    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-  }
-
-  @Override
-  public int size() {
-    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-  }
-
-  @Override
-  public boolean transferFrom(Container allElements) {
-    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    LinkedList myList = (LinkedList) super.getLs();
+    if (myList.size() > 0) {
+      Object topElement = myList.get(myList.size()-1);
+      myList.remove(myList.size()-1);
+      return topElement;
+    }
+    // if tried to extract element from nothing - return nothing :)
+    return null;
   }
 
 
-  
 }

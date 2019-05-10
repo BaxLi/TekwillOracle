@@ -10,9 +10,16 @@ package Excersize15_9;
  * @author Bax
  */
 public interface Container<T> {
+
   public T pop();
-  public void  push(T value);
+
+  public void push(T value);
+
   public boolean isEmpty();
+
   public int size();
-  public boolean transferFrom(Container allElements);
+
+  public static Container transferFrom(Container allElements) {
+    return null;
   };
+};
