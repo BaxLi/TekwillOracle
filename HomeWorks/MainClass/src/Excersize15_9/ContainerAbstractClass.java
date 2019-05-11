@@ -33,7 +33,7 @@ public abstract class ContainerAbstractClass implements Container {
     return ls.size();
   }
 
-  public List<Object> getLs() {
+  protected List<Object> getLs() {
     return ls;
   }
 
@@ -41,8 +41,13 @@ public abstract class ContainerAbstractClass implements Container {
     ls.add(value);
   }
 
-  public static Stack transferFrom(Container allElements) {
-    Stack newStack = new Stack();
+  public static Container transferFrom(Container allElements) {
+    Container newStack;
+      if (allElements instanceof Stack) {
+        newStack = new Stack();
+      } else {
+        newStack = new Queue();
+      }
     while (!allElements.isEmpty()) {
       newStack.push(allElements.pop());
     }

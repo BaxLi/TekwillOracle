@@ -12,6 +12,7 @@ import java.util.List;
 /**
  *
  * @author Bax
+ * Stack - realize LIFO principles, so this is realised based on ArrayList, where the head is FIRST element and LAST enetered is obj.last
  */
 public class Stack extends ContainerAbstractClass {
 
@@ -21,15 +22,14 @@ public class Stack extends ContainerAbstractClass {
 
   @Override
   public Object pop() {
+    // LIFO approach
     LinkedList myList = (LinkedList) super.getLs();
     if (myList.size() > 0) {
-      Object topElement = myList.get(myList.size()-1);
-      myList.remove(myList.size()-1);
+      Object topElement = myList.getLast();
+      myList.removeLast();
       return topElement;
     }
     // if tried to extract element from nothing - return nothing :)
     return null;
   }
-
-
 }

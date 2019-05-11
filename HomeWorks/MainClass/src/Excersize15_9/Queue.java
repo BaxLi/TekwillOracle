@@ -5,10 +5,25 @@
  */
 package Excersize15_9;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+
 /**
  *
  * @author Bax
  */
-public class Queue {
+public class Queue extends ContainerAbstractClass {
+
+  public Object pop() {
+    // FIFO approach
+    ArrayList myList = (ArrayList) super.getLs();
+    if (myList.size() > 0) {
+      Object topElement = myList.get(0);
+      myList.remove(0);
+      return topElement;
+    }
+    // if tried to extract element from nothing - return nothing :)
+    return null;
+  }
   
 }
